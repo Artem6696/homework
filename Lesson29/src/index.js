@@ -16,3 +16,24 @@
 // 3. Ваш код должен выполняться — это значит, что если вы оборачиваете решение в функцию, то ее нужно вызывать
 
 // Ниже напишите ваше решение
+// const body = document.body.innerHTML
+// document.body.innerHTML = ''
+
+// const p1 = document.createElement('p')
+// p1.innerHTML = body
+// const bodyP = document.body.appendChild(p1)
+// const text = bodyP.textContent
+
+
+const body = document.querySelector('body');
+const text = body.innerHTML.trim().split('\n');
+
+text.forEach((line) => {
+  const p = document.createElement('p');
+  p.textContent = line.trim();
+  body.appendChild(p);
+});
+
+
+const bodyDel = document.innerHTML
+bodyDel = ''
