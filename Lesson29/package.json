@@ -1,0 +1,11 @@
+{
+  "name": "lesson_2",
+  "version": "1.0.0",
+  "description": "dom_lesson_2",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "ISC"
+}
